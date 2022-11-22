@@ -114,7 +114,7 @@ appears on the left side of the page.
     */
     #menu .pure-menu ul,
     #menu .pure-menu .menu-item-divided {
-        border-top: 1px solid #999;
+        border-top: 1px solid #fff;
     }
         /*
         Change color of the anchor links on hover/focus.
@@ -159,12 +159,12 @@ how it works:
 small screens.
 */
 .menu-link {
-    position: fixed;
+    position: relative;
     display: block; /* show this only on small screens */
     top: 0;
     left: 0; /* "#menu width" */
     background: #000;
-    background: rgba(0,0,0,0.7);
+    #background: rgba(0,0,0,0.7);
     font-size: 10px; /* change this value to increase/decrease button size */
     z-index: 10;
     width: 2em;
