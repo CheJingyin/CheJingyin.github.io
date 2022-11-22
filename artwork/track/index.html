@@ -46,114 +46,108 @@
   <link rel="alternate" type="application/rss+xml" title=""
     href='/index.xml' />
   
-
   
 
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+  
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
 
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #000;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #000;
+}
+
+/* Main content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 16px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #fff;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 30px;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
   
   
-
 </head>
-
-
 <body>
-<div id="layout">
 
-  
-<a href="#menu" id="menuLink" class="menu-link">
-  
-  <span></span>
-</a>
-<div id="menu">
-
-  
-  <a class="pure-menu-heading brand">Che Jingyin</a>
-
-
-  <div class="pure-menu">
-    <ul class="pure-menu-list">
-      
-      
-        <li class="pure-menu-item">
-          <a class="pure-menu-link" href="/artworks/">Artworks</a>
-      
-        </li>
-      
-      
-        <li class="pure-menu-item">
-          <a class="pure-menu-link" href="/portraiture-of-amtrak/">Portraiture of Amtrak</a>
-      
-        </li>
-      
-      
-        <li class="pure-menu-item">
-          <a class="pure-menu-link" href="/those-who-leave-and-those-who-stay/">Those who leave and those who stay</a>
-      
-        </li>
-      
-      
-        <li class="pure-menu-item">
-          <a class="pure-menu-link" href="/borderlands/">Borderlands</a>
-      
-        </li>
-      
-      
-        <li class="pure-menu-item">
-          <a class="pure-menu-link" href="/theravada-buddhism-in-ohio/">Theravada Buddhism in Ohio</a>
-      
-        </li>
-      
-      
-        <li class="pure-menu-item">
-          <a class="pure-menu-link" href="/amtrak/"> Portraiture of Amtrak</a>
-      
-        </li>
-      
-      
-        <li class="pure-menu-item">
-          <a class="pure-menu-link" href="/2020-2022/">2020-2022</a>
-      
-        </li>
-      
-      
-        <li class="pure-menu-item">
-          <a class="pure-menu-link" href="/cv/">CV</a>
-      
-        </li>
-      
-      
-        <li class="pure-menu-item">
-          <a class="pure-menu-link" href="/contact/">Contact</a>
-      
-        </li>
-      
-      
-        <li class="pure-menu-item">
-          <a class="pure-menu-link" href="https://{{ . }}.tumblr.com/"><i class='fab fa-instagram fa-fw'></i></a>
-      
-        </li>
-      
-    </ul>
+<div class="sidenav">
+  <a>Che Jingyin</a>
+  <a href="/">Home</a>
+  <button class="dropdown-btn">Artwork
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="/artwork/track/">Track</a>
+    <a href="/artwork/swallow/">Swallow</a>
+    <a href="/artwork/blight/">Blight</a>
+    <a href="/artwork/pracharak/">Pracharak</a>
   </div>
-
-  
+  <a href="/CV/">CV</a>
+  <a href="/contact/">Contact</a>
+ 
 </div>
 
-
-  <div id="main">
-
-
-<div class="header">
-  <h1></h1>
-  <h2></h2>
+<div class="main">
+  <h2>Sidebar Dropdown</h2>
+  <p>Click on the dropdown button to open the dropdown menu inside the side navigation.</p>
+  <p>This sidebar is of full height (100%) and always shown.</p>
+  <p>Some random text..</p>
 </div>
-
-<div class="content">
-  
-
-  
-
 
 </div>
 
@@ -162,6 +156,23 @@
 <script src="js/ui.js"></script>
 <script src="js/menus.js"></script>
 
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
 
 
 
@@ -173,4 +184,3 @@
 
 </body>
 </html>
-
