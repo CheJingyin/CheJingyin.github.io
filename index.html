@@ -50,7 +50,7 @@
 
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
   
-  <style>
+<style>
 body {
   font-family: "Lato", sans-serif;
 }
@@ -85,20 +85,20 @@ body {
 
 /* On mouse-over */
 .sidenav a:hover, .dropdown-btn:hover {
-  color: #000;
+  color: #f1f1f1;
 }
 
 /* Main content */
 .main {
   margin-left: 150px; /* Same as the width of the sidenav */
-  font-size: 16px; /* Increased text to enable scrolling */
+  font-size: 20px; /* Increased text to enable scrolling */
   padding: 0px 10px;
 }
 
 /* Add an active class to the active dropdown button */
 .active {
-  background-color: #fff;
-  color: #000;
+  background-color: white;
+  color: black;
 }
 
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
@@ -120,7 +120,6 @@ body {
   .sidenav a {font-size: 18px;}
 }
 </style>
-  
 
     
 
@@ -141,7 +140,21 @@ body {
   <a class="pure-menu-heading brand">Che Jingyin</a>
   
 
-
+ <div class="sidenav">
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#clients">Clients</a>
+  <a href="#contact">Contact</a>
+  <button class="dropdown-btn">Dropdown 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+  <a href="#contact">Search</a>
+</div>
 
   <div class="pure-menu">
     <ul class="pure-menu-list">
@@ -163,34 +176,6 @@ body {
       
         </li>
       
-      <button class="dropdown-btn">Dropdown 
-      <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-container">
-      <ul class="pure-menu-children">
-            
-            <li class="pure-menu-item">
-              <a class="pure-menu-link" href="/Amtrak/">Amtrak</a>
-            </li> 
-            
-            <li class="pure-menu-item">
-              <a class="pure-menu-link" href="/borderlands/">Borderlands</a>
-            </li> 
-            
-            <li class="pure-menu-item">
-              <a class="pure-menu-link" href="/those/">Those</a>
-            </li>
-            
-            <li class="pure-menu-item">
-            <a class="pure-menu-link" href="/buddhism/">Buddhism</a>
-            </li>
-            
-            <li class="pure-menu-item">
-            <a class="pure-menu-link" href="/2020-2022/">20-22</a>
-            </li>
-            
-          </ul>  
-      </div>
       
         <li class="pure-menu-has-children">
           <a class="pure-menu-link">Artworks</a>
