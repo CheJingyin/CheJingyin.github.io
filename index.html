@@ -49,6 +49,48 @@
   
 
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+  
+  
+  .dropbtn {
+  background-color: #fff;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  min-width: 150px;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: #fff;
+  min-width: 150px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #f1f1f1;
+}
+</style>
 
   
   
@@ -92,11 +134,10 @@
       
         </li>
       
-        <li class="pure-menu-has-children">
-          <a class="pure-menu-link">Artworks</a>
-          
-          <ul class="pure-menu-children">
-            
+        <li class="dropdown"">
+          <a class="dropbtn">Artworks</a>
+          <div class="dropdown-content">
+                                                  
             <li class="pure-menu-item">
               <a class="pure-menu-link" href="/portraiture-of-amtrak/">Portraiture of Amtrak</a>
             </li> 
@@ -115,9 +156,7 @@
             
             <li class="pure-menu-item">
             <a class="pure-menu-link" href="/2020-2022/">2020-2022</a>
-            </li>
-            
-          </ul>  
+            </li> 
       </li>
         
       
