@@ -13,7 +13,7 @@
             ARIA_HIDDEN = 'aria-hidden',
             MENU_OPEN = 0,
             MENU_CLOSED = 1,
-            MENU_PARENT_CLASS_NAME = 'pure-menu-has-children',
+            MENU_PARENT_CLASS_NAME = '.pure-menu-has-children',
             MENU_ACTIVE_SELECTOR = '.pure-menu-active',
             MENU_LINK_SELECTOR = '.pure-menu-link',
             MENU_SELECTOR = '.pure-menu-children',
