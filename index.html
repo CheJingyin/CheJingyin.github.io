@@ -7,8 +7,8 @@
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.106.0">
 
-  <title></title>
-
+  <title>CheJingyin</title>
+  
     
 
   
@@ -46,9 +46,7 @@
   <link rel="alternate" type="application/rss+xml" title=""
     href='/index.xml' />
   
-  
-
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="data:,">
   
 <style>
 body {
@@ -59,6 +57,7 @@ body {
 .sidenav {
   height: 100%;
   width: 200px;
+  top: 50px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -69,7 +68,7 @@ body {
 }
 
 /* Style the sidenav links and the dropdown button */
-.sidenav a, .dropdown-btn {
+.sidenav a, .dropdown-btn{
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 16px;
@@ -83,10 +82,19 @@ body {
   outline: none;
 }
 
-/* On mouse-over */
-.sidenav a:hover, .dropdown-btn:hover {
+/*social media*/
+
+
+.fa fa-instagram {
+  background: #3B5998;
   color: #000;
+  }
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover, .fa:hover {
+  opacity: 0.5;
 }
+
 
 /* Main content */
 .main {
@@ -108,17 +116,36 @@ body {
   padding-left: 8px;
 }
 
-/* Optional: Style the caret down icon */
-.fa-caret-down {
-  float: right;
-  padding-right: 30px;
-}
 
 /* Some media queries for responsiveness */
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+  
+ .wrapper{
+    width: 100%; 
+    hight: 100%
+    overflow-x:scroll;     
+    white-space: nowrap;
+}
+
+.slide{
+    margin-left: 200px; 
+    margin-right: 200px;
+    background: #fff;
+    height: 800px;
+    display: inline-block;
+    width: 1000px;
+}
+  .slide img {
+  vertical-align: middle;
+  margin-top: 50px;
+  width: 100%;
+}
+
+  
+
 </style>
   
   
@@ -129,7 +156,6 @@ body {
   <a>Che Jingyin</a>
   <a href="/">Home</a>
   <button class="dropdown-btn">Artwork
-    <i class="fa fa-caret-down"></i>
   </button>
   <div class="dropdown-container">
     <a href="/artwork/track/">Track</a>
@@ -137,16 +163,17 @@ body {
     <a href="/artwork/blight/">Blight</a>
     <a href="/artwork/pracharak/">Pracharak</a>
   </div>
-  <a href="/CV/">CV</a>
+  <a href="/Bio/">Bio</a>
   <a href="/contact/">Contact</a>
+  <a href="https://www.instagram.com/gnijcheehcjing/"><i class="fa fa-instagram"></i></a>
  
 </div>
 
 <div class="main">
-  <h2>Sidebar Dropdown</h2>
-  <p>Click on the dropdown button to open the dropdown menu inside the side navigation.</p>
-  <p>This sidebar is of full height (100%) and always shown.</p>
-  <p>Some random text..</p>
+  
+
+</div>
+  
 </div>
 
 </div>
@@ -173,7 +200,6 @@ for (i = 0; i < dropdown.length; i++) {
   });
 }
 </script>
-
 
 
 
