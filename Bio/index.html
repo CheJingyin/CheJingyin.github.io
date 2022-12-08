@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.106.0">
+
+  <title>CheJingyin</title>
+  
+    
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" type="text/css">
+
+  
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+ 
+  
+  <link rel="alternate" type="application/rss+xml" title=""
+    href='/index.xml' />
+  
+  <link rel="icon" href="data:,">
+  
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  top: 50px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn{
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #000;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/*social media*/
+
+
+.fa fa-instagram {
+  background: #3B5998;
+  color: #000;
+  }
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover, .fa:hover {
+  opacity: 0.5;
+}
+
+
+/* Main content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 16px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #fff;
+  padding-left: 8px;
+}
+
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+  
+ .wrapper{
+    width: 100%; 
+    hight: 100%
+    overflow-x:scroll;     
+    white-space: nowrap;
+}
+
+.slide{
+    margin-left: 200px; 
+    margin-right: 200px;
+    background: #fff;
+    height: 800px;
+    display: inline-block;
+    width: 1000px;
+}
+  .slide img {
+  vertical-align: middle;
+  margin-top: 50px;
+  width: 100%;
+}
+
+  
+
+</style>
+  
+  
+</head>
+<body>
+
+<div class="sidenav">
+  <a>Che Jingyin</a>
+  <a href="/">Home</a>
+  <button class="dropdown-btn">Artwork
+  </button>
+  <div class="dropdown-container">
+    <a href="/artwork/track/">Track</a>
+    <a href="/artwork/swallow/">Swallow</a>
+    <a href="/artwork/blight/">Blight</a>
+    <a href="/artwork/pracharak/">Pracharak</a>
+  </div>
+  <a href="/Bio/">Bio</a>
+  <a href="/contact/">Contact</a>
+  <a href="https://www.instagram.com/gnijcheehcjing/"><i class="fa fa-instagram"></i></a>
+ 
+</div>
+
+<div class="main">
+  
+
+</div>
+  
+</div>
+
+</div>
+
+</div>
+</div>
+<script src="js/ui.js"></script>
+<script src="js/menus.js"></script>
+
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
